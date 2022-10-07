@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#adminmenu .wp-menu-image img,
+#wpadminbar #wp-admin-bar-languages .ab-item img {
+	display: inline !important;
+	padding-top: 0 !important;
+}
+
+.update-nag {
+	display: none !important;
+}
+
+input[type='date'],
+input[type='datetime-local'],
+input[type='datetime'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+select,
+textarea {
+	border: 1px solid rgb(209 213 219 / 1) !important;
+	z-index: 1;
+	border-radius: 4px !important;
+	--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+	max-width: none !important;
+	line-height: 32px !important;
+}
+
+input[type='date']:focus,
+input[type='datetime-local']:focus,
+input[type='datetime']:focus,
+input[type='email']:focus,
+input[type='month']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='time']:focus,
+input[type='url']:focus,
+input[type='week']:focus,
+select:focus,
+textarea:focus {
+	border: 1px solid rgb(59, 130, 246) !important;
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+	--tw-ring-color: #2563eb;
+	--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+	--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+	box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+input[type='date']:invalid,
+input[type='datetime-local']:invalid,
+input[type='datetime']:invalid,
+input[type='email']:invalid,
+input[type='month']:invalid,
+input[type='number']:invalid,
+input[type='password']:invalid,
+input[type='search']:invalid,
+input[type='tel']:invalid,
+input[type='text']:invalid,
+input[type='time']:invalid,
+input[type='url']:invalid,
+input[type='week']:invalid,
+select:invalid,
+textarea:invalid {
+	border: 1px solid rgb(239 68 68) !important;
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+	--tw-ring-color: rgb(239 68 68);
+	--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+	--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+	box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+input[type='color'] {
+	all: unset;
+	display: block;
+	width: 50%;
+	height: 30px;
+	border: 0 !important;
+}
+
+input[type='radio'] {
+	all: unset;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1rem;
+	width: 1rem;
+	background: #ffffff !important;
+	border: 1px solid rgb(209 213 219 / 1) !important;
+}
+
+input[type='radio']:focus,
+input[type='radio']:checked {
+	background: rgb(59, 130, 246) !important;
+	border: 1px solid rgb(59, 130, 246) !important;
+}
+
+input[type='radio']::before {
+	background: #ffffff !important;
+	margin: 0 !important;
+}
+
+#breakpoint,
+#burger_color,
+#search_color,
+input[type='text'].lang {
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+input[type='text'].selector {
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-left: 0 !important;
+}
+
+#wp-content_before-wrap,
+#wp-content_after-wrap {
+	margin-top: 4px;
+}
+
+.mobile-manager .toggle-switch {
+	height: 16px;
+	width: 32px;
+	margin: 0 10px;
+	position: relative;
+	display: inline-block;
+}
+
+.mobile-manager .toggle-switch input[type='checkbox'] {
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+.mobile-manager .toggle-switch input[type='checkbox']:checked + .switch {
+	background: #2196f3;
+}
+
+.mobile-manager .toggle-switch input[type='checkbox']:focus + .switch {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+.mobile-manager .toggle-switch input[type='checkbox']:checked + .switch:before {
+	transform: translateX(16px);
+}
+
+.mobile-manager .toggle-switch .switch {
+	border-radius: 30px;
+	position: absolute;
+	cursor: pointer;
+	inset: 0;
+	background: #5fd39d;
+	transition: 0.4s;
+}
+
+.mobile-manager .toggle-switch.--binary .switch {
+	border-radius: 30px;
+	position: absolute;
+	cursor: pointer;
+	inset: 0;
+	background: #929292;
+	transition: 0.4s;
+}
+
+.mobile-manager .toggle-switch .switch:before {
+	position: absolute;
+	content: '';
+	height: 12px;
+	width: 12px;
+	left: 2px;
+	border-radius: 50%;
+	bottom: 2px;
+	background: white;
+	transition: 0.4s;
+}
+
+.mobile-manager img[src=''] {
+	display: none;
+}
+
+.CodeMirror {
+	height: 140px;
+	@apply focus:ring-blue-500 focus:border-blue-500 block w-full;
+	border: 1px solid rgb(209 213 219 / 1) !important;
+	border-radius: 4px;
+	z-index: 1;
+	--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.CodeMirror-activeline-background,
+.CodeMirror-gutters,
+.CodeMirror-gutter-wrapper {
+	display: none;
+}
+
+.CodeMirror-code {
+	padding: 0 4px;
+}
+
+.CodeMirror-matchingtag {
+	background: none;
+}
